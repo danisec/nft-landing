@@ -10,6 +10,13 @@ import Carousel4 from "../public/carousel/carousel-4.svg";
 import Redman from "../public/nft/red-man.svg";
 import Redmanxs from "../public/nft/red-man-xs.svg";
 import Cardblack from "../public/nft/card-black.svg";
+import Iconnftlanding from "../public/icon-nftlanding.svg";
+import Graphicnft from "../public/graphic-nft.svg";
+import Bomerang from "../public/logo/boomerang.svg";
+import Blimp from "../public/logo/blimp.svg";
+import Droplet from "../public/logo/droplet.svg";
+import Opendoor from "../public/logo/opendoor.svg";
+import Qrco from "../public/logo/qrco.svg";
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: false });
@@ -60,15 +67,13 @@ export default function Home() {
         <div className="section-nft mt-24 mb-8 md:mt-28 md:rounded-lg md:px-12">
           <div className="bg-nft px-6 md:rounded-lg md:px-12">
             <div className="grid grid-flow-col pt-0 md:pt-6">
-              <div>
-                <img className="mt-4 w-11" src="icon-nftlanding.svg" alt="" />
+              <div className="mt-4 w-11">
+                <Image src={Iconnftlanding} alt="icon-nft" />
               </div>
               <div className="absolute right-0 mx-12 md:mx-0">
-                <img
-                  className="-mt-7 w-28 md:-mt-20 md:w-8/12"
-                  src="graphic-nft.svg"
-                  alt=""
-                />
+                <div className="-mt-7 w-28 md:-mt-20 md:w-8/12">
+                  <Image src={Graphicnft} alt="graphic-nft" />
+                </div>
               </div>
             </div>
             <div className="mt-5">
@@ -83,19 +88,19 @@ export default function Home() {
         </div>
 
         <div className="section-logo mt-12 pb-12 md:mt-20">
-          <div className="bg-white px-6">
+          <div className="mx-auto bg-white px-6 lg:px-12">
             <ul className="grid grid-cols-2 gap-4 md:flex md:gap-2">
               <li className="ml-2 w-11/12 md:w-4/12">
-                <img className="mx-auto" src="logo/boomerang.svg" alt="" />
+                <Image className="mx-auto" src={Bomerang} alt="" />
               </li>
               <li className="ml-2 w-8/12 md:w-4/12">
-                <img className="mx-auto" src="logo/blimp.svg" alt="" />
+                <Image className="mx-auto" src={Blimp} alt="" />
               </li>
               <li className="ml-2 w-7/12 md:w-4/12">
-                <img className="mx-auto" src="logo/qrco.svg" alt="" />
+                <Image className="mx-auto" src={Qrco} alt="" />
               </li>
               <li className="ml-2 w-9/12 md:w-4/12">
-                <img className="mx-auto" src="logo/droplet.svg" alt="" />
+                <Image className="mx-auto" src={Droplet} alt="" />
               </li>
             </ul>
           </div>
