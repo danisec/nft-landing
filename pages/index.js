@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Layout from "../components/Layout";
 import useEmblaCarousel from "embla-carousel-react";
+import Logo from "../public/header/logo-header.svg";
 import Logolanding from "../public/logo-landing.svg";
 import Logolandingxs from "../public/logo-landing-xs.svg";
 import Carousel1 from "../public/carousel/carousel-1.svg";
@@ -15,8 +16,9 @@ import Graphicnft from "../public/graphic-nft.svg";
 import Bomerang from "../public/logo/boomerang.svg";
 import Blimp from "../public/logo/blimp.svg";
 import Droplet from "../public/logo/droplet.svg";
-import Opendoor from "../public/logo/opendoor.svg";
 import Qrco from "../public/logo/qrco.svg";
+import Icon1 from "../public/nft/icon-1.svg";
+import Icon2 from "../public/nft/icon-2.svg";
 
 export default function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: false });
@@ -270,8 +272,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="section-initial mt-0 mb-8 px-0 md:px-12 lg:mt-20">
-          <div className="rounded-lg bg-[#39FFA0]/10 md:px-0">
+        <div className="section-initial mt-0 px-0 md:px-12 lg:mt-20">
+          <div className="lg:rounded-lg bg-[#39FFA0]/10 md:px-0">
             <div className="flex flex-col-reverse lg:flex-row-reverse lg:px-6 xl:px-0">
               <div className="mx-auto mt-8 px-6 lg:mt-32 lg:px-0">
                 <p className="text-3xl font-medium tracking-wide">
@@ -306,6 +308,149 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="section-othernft px-0 md:px-12 lg:mt-20">
+          <div className="bg-white">
+            <div className="grid lg:grid-flow-col lg:gap-12">
+              <div className="bg-gray-100 lg:rounded-lg px-6 lg:px-20">
+                <div className="mt-14">
+                  <Image src={Icon1} alt="Icon-1" />
+                </div>
+                <div className="mt-8 font-medium text-4xl tracking-wide leading-snug">
+                  <p>An NFT like no other</p>
+                </div>
+                <div className="mt-4 text-md font-normal w-11/12 text-gray-800 lg:w-10/12">
+                  <p>
+                    Don’t miss out on the release of our new NFT. Sign up below
+                    to receive updates when we go live on 18/9.
+                  </p>
+                </div>
+                <div className="mt-4 text-md font-normal w-11/12 pb-12 text-gray-800 lg:w-10/12">
+                  <p>
+                    Don’t miss out on the release of our new NFT. Sign up below
+                    to receive updates when we go live on 18/9.Don’t miss out on
+                    the release of our new NFT.{" "}
+                  </p>
+                </div>
+              </div>
+              <div className="lg:bg-gray-100 bg-white lg:rounded-lg px-6 lg:px-20">
+                <div className="mt-14">
+                  <Image src={Icon2} alt="Icon-2" />
+                </div>
+                <div className="mt-8 font-medium text-4xl tracking-wide leading-snug">
+                  <p>An NFT like no other</p>
+                </div>
+                <div className="mt-4 text-md font-normal w-11/12 text-gray-800 lg:w-10/12">
+                  <p>
+                    Don’t miss out on the release of our new NFT. Sign up below
+                    to receive updates when we go live on 18/9.
+                  </p>
+                </div>
+                <div className="mt-4 text-md font-normal w-11/12 text-gray-800 pb-12 lg:w-10/12">
+                  <p>
+                    Don’t miss out on the release of our new NFT. Sign up below
+                    to receive updates when we go live on 18/9.Don’t miss out on
+                    the release of our new NFT.{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer className="section-footer mt-0 lg:mt-20 border">
+          <div className="bg-white px-6 lg:px-12 pb-12">
+            <div className="grid lg:grid-flow-col">
+              <div>
+                <div className="mt-12 flex">
+                  <Image src={Logo} alt="logo" />
+                  <div className="font-black text-lg ml-2 mt-1">
+                    <p>nftlanding</p>
+                  </div>
+                </div>
+                <div className="text-gray-700 font-normal mt-4">
+                  <p>Exclusive NFT Collection</p>
+                </div>
+                <div className="flex gap-4 font-medium text-xl mt-4 text-gray-500">
+                  <i className="uil uil-facebook-f"></i>
+                  <i className="uil uil-twitter-alt"></i>
+                  <i className="uil uil-instagram"></i>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4">
+                <div className="mt-12 ">
+                  <div className="text-sm font-medium">
+                    <p>ABOUT</p>
+                  </div>
+                  <div className="mt-4">
+                    <ul>
+                      <li className="mt-2">
+                        <a href="#">About</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Terms</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Legal</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-12 ">
+                  <div className="text-sm font-medium">
+                    <p>NFT</p>
+                  </div>
+                  <div className="mt-4">
+                    <ul>
+                      <li className="mt-2">
+                        <a href="#">OpenSea</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Maker</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Learn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-12 ">
+                  <div className="text-sm font-semibold">
+                    <p>CONTACT</p>
+                  </div>
+                  <div className="mt-4">
+                    <ul>
+                      <li className="mt-2">
+                        <a href="#">Press</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Support</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-12 ">
+                  <div className="text-sm font-semibold">
+                    <p>SOCIAL</p>
+                  </div>
+                  <div className="mt-4">
+                    <ul>
+                      <li className="mt-2">
+                        <a href="#">Twitter</a>
+                      </li>
+                      <li className="mt-2">
+                        <a href="#">Instagram</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-16 font-normal text-md text-gray-500">
+              <p>© Copyright 2022 NFTlanding</p>
+            </div>
+          </div>
+        </footer>
       </Layout>
     </div>
   );
