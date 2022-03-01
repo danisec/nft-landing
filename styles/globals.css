@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-nft {
+        background: linear-gradient(89.18deg, #FF3998 -40.65%, #FF8139 66.53%, #39FFA0 140.98%, #FF3939 143.56%);
+      }
+    .btn-primary {
+      border-radius:50px;
+      border: 4px solid #FF8139;
+      padding: 10px 20px;
+    }
+    .embla {
+        overflow: hidden;
+      }
+    .embla__container {
+        display: flex;
+        height: auto;
+        width: 50%;
+      }
+    .embla__slide {
+        position: relative;
+        flex: 0 0 100%;
+        margin-right: 20px;
+        margin-left: 10px;
+
+       }
+
+      @media (min-width: 768px) {
+        .embla__slide {
+          flex: 0 0 100%; /* Breakpoint SM slide covers 50% of the viewport */
+          margin-right: -11rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .embla__slide {
+          flex: 0 0 100%; /* Breakpoint SM slide covers 50% of the viewport */
+          margin-right: -15rem;
+        }
+      }
+      @media (min-width: 1280px) {
+        .embla__slide {
+          flex: 10% 10% 50%; /* Breakpoint SM slide covers 50% of the viewport */
+          margin-right: -17.9rem;
+        }
+      }
+  };
