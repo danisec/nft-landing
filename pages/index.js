@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <div className="xs:hidden -mr-48 -mt-10 sm:-mr-32 sm:block md:-mt-20 md:-mr-0 md:block lg:w-10/12">
               <Image
-                className="w-12/12 animate-skew"
+                className="w-12/12 animate-[rotateX_10s_ease-in-out_infinite]"
                 src={Logolanding}
                 alt="image-landing"
               />
@@ -314,7 +314,11 @@ export default function Home() {
             <div className="grid lg:grid-flow-col lg:gap-12">
               <div className="bg-gray-100 lg:rounded-lg px-6 lg:px-20">
                 <div className="mt-14">
-                  <Image src={Icon1} alt="Icon-1" />
+                  <Image
+                    className="animate-[rotate_1s_ease-in-out_infinite]"
+                    src={Icon1}
+                    alt="Icon-1"
+                  />
                 </div>
                 <div className="mt-8 font-medium text-4xl tracking-wide leading-snug">
                   <p>An NFT like no other</p>
@@ -335,7 +339,11 @@ export default function Home() {
               </div>
               <div className="lg:bg-gray-100 bg-white lg:rounded-lg px-6 lg:px-20">
                 <div className="mt-14">
-                  <Image src={Icon2} alt="Icon-2" />
+                  <Image
+                    className="animate-[rotate_1s_ease-in-out_infinite]"
+                    src={Icon2}
+                    alt="Icon-2"
+                  />
                 </div>
                 <div className="mt-8 font-medium text-4xl tracking-wide leading-snug">
                   <p>An NFT like no other</p>

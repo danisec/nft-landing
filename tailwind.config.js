@@ -32,7 +32,22 @@ module.exports = {
     },
 
     extend: {
-      colors: {},
+      keyframes: {
+        animation: {
+          rotate: "rotate 2s alternate-reverse infinite",
+          rotateX: "rotate 2s alternate-reverse backwards infinite",
+        },
+        rotate: {
+          "0%, 100%": { transform: "rotateY(-180deg)" },
+          "50%": { transform: "rotate(1deg)" },
+        },
+
+        rotateX: {
+          "0%": { transform: "rotate(0deg) duration(.2s)" },
+          "50%": { transform: "rotate(90deg) duration-2" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],
